@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>FakePinterest</title>
+
+    <title>
+        {% block titulo %}
+        FakePinterest
+        {% endblock%}
+    </title>
 </head>
+{% block body %}
 <body>
 <h1>FakePinterest - Meu Primeiro Site no ar</h1>
 <h2>Vamos continuar o site</h2>
 </body>
+{% endblock %}
 </html>
