@@ -19,4 +19,4 @@ class FormCriarConta(FlaskForm):
     def validate_email(self, email):
         usuario = Usuario.query.filter_by(email=email.data).first()
         if usuario:
-            return ValidationError("Email já casdastrado, faça login para continuar.")
+            raise ValidationError("Email já casdastrado, faça login para continuar.")
